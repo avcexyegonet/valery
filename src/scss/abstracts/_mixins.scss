@@ -1,0 +1,16 @@
+@use 'vars';
+
+@mixin mq($from) {
+    @media (min-width: $from) {
+        @content;
+    }
+}
+
+@mixin hideScrollbar() {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+        width: 0 !important;
+    }
+}

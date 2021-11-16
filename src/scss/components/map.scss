@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+
+.map-wrap {
+    margin: 0 -16px;
+   
+    #map {
+        height: 300px;
+
+        [class*="-ground-pane"] {
+            filter: grayscale(1);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        #map {
+            height: 500px;
+        }
+    }
+}

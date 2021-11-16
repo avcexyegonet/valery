@@ -1,0 +1,102 @@
+@use "../abstracts" as *;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+a:focus,
+a:active {
+    outline: 0;
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-bg);
+    border-radius: 15px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    height: auto;
+    min-height: calc(var(--vh) * 100);
+    font-size: 23px;
+    min-width: 320px;
+    font-family: "GolosTextWebRegular";
+    color: var(--color-dark-main);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: var(--color-light-main);
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url('../images/media/bg3.png')no-repeat center bottom / cover;
+        opacity: 0.125;
+        z-index: -1;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.25s ease-out;
+        color: inherit;
+    }
+    a img {
+        border: none !important;
+    }
+
+    @media screen and (max-width: 1200px) {
+        font-size: 20px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+*::selection {
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
