@@ -1,9 +1,15 @@
 <main>
-    <div>
-        @@include('preview.html')
+
+    @@include('components/banner.html')
+
+    <div class="content">
+
+        @@include('components/services.html')
+        @@include('components/about.html')
+        @@include('components/contacts.html')
+
     </div>
 
-    <div class="map-wrap">
-        <div id="map"></div>
-    </div>
+    @@include('components/footer.html')
+
 </main>

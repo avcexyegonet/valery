@@ -1,18 +1,18 @@
 function initMap(){
 
-    let zoom = window.innerWidth >= 1200 ? 16 : 15
+    let zoom = window.innerWidth >= 1200 ? 17 : 16
 
     const mapInst = new ymaps.Map("map", {
-        center: [55.961490, 38.037589],
+        center: [55.904942, 37.984893],
         zoom: zoom,
         controls: []
     })
 
-    const placemark = new ymaps.Placemark([55.961490, 38.037589], {}, {
+    const placemark = new ymaps.Placemark([55.904942, 37.984893], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '../images/media/map.png',
-        iconImageSize: [45, 45],
-        iconImageOffset: [-10, -40]
+        iconImageHref: './images/media/map.png',
+        iconImageSize: [90, 90],
+        iconImageOffset: [-15, -75]
     });
 
     mapInst.geoObjects.add(placemark);

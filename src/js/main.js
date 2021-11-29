@@ -13,9 +13,17 @@ const footerDate = document.getElementById('footerDate')
 
 if(footerDate) {
     let date = new Date()
-    footerDate.innerHTML = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`
+    footerDate.innerHTML = `${date.getFullYear()}`
+}
+
+const footerLogo = document.getElementById('footerLogo')
+const banner = document.querySelector('.banner')
+
+if(footerLogo) {
+    footerLogo.addEventListener('click', () => banner.scrollIntoView({ behavior: 'smooth', block: 'start'}))
 }
 
 
-//include('components/tweenMax.js')
+//include('components/header.js')
+//include('components/slider.js')
 //include('components/map.js')

@@ -6,6 +6,12 @@
     }
 }
 
+@mixin logo($size) {
+    width: $size;
+    height: $size;
+    background: url('../images/logo.png')no-repeat center / contain;
+}
+
 @mixin hideScrollbar() {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;

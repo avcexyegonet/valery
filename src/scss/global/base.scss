@@ -37,27 +37,11 @@ body {
     margin: 0;
     box-sizing: inherit;
     height: auto;
-    min-height: calc(var(--vh) * 100);
     font-size: 23px;
     min-width: 320px;
     font-family: "GolosTextWebRegular";
-    color: var(--color-dark-main);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    background: var(--color-light-main);
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url('../images/media/bg3.png')no-repeat center bottom / cover;
-        opacity: 0.125;
-        z-index: -1;
-    }
+    color: var(--color-text);
+    background: var(--color-bg);
 
     ul {
         margin: 0;
@@ -75,7 +59,7 @@ body {
     }
 
     @media screen and (max-width: 1200px) {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
@@ -97,6 +81,6 @@ img {
 }
 
 *::selection {
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: var(--color-green);
+    color: var(--color-white);
 }

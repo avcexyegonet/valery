@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.about {
+    padding-block-start: 45px;
+
+    &__title {
+        margin-block-end: 45px;
+        font-size: 55px;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    &__content {
+        margin-block: 40px 20px;
+        color: var(--color-text-mid);
+
+        p {
+            margin-block-end: 20px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        //padding-block-start: 0;
+
+        &__title {
+            font-size: 34px;
+            margin-block-end: 25px;
+        }
+    }
+}
