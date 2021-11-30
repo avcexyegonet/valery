@@ -1,0 +1,14 @@
+@use "../abstracts" as *;
+
+.price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__title {
+        margin-block: 45px;
+        font-size: 55px;
+        flex: 0 0 100%;
+        text-align: center;
+    }
+}

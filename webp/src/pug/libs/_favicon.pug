@@ -1,0 +1,2 @@
+mixin favIcon(sizeVal, format = 'png')
+    link(type=`image/${format}` sizes=`${sizeVal}` rel='icon' href=require(`../src/images/favicon-${sizeVal}.${format}`))

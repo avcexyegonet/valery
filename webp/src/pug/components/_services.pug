@@ -1,0 +1,26 @@
+.wrap
+    #services.services.js-slider
+        .services__content
+            .services__text(style='opacity: 1;')
+                h3.services__title Не работает ноутбук?
+                p.services__desc
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    | incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam!
+            .services__text
+                h3.services__title Больше не сосёт?
+                p.services__desc Интимную жизнь не разнообразим, но пылесос починим!
+            .services__text
+                h3.services__title Разбили экран?
+                p.services__desc Да это Валера вообще за 30 минут делает!
+        .services__slider
+            .swiper
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src=require(`/src/images/media/laptop.png`) alt='')
+                        .swiper-slide
+                            img(src=require(`/src/images/media/cliner.png`) alt='')
+                        .swiper-slide
+                            img(src=require(`/src/images/media/phone.png`) alt='')
+                    .swiper-button-prev
+                    .swiper-button-next

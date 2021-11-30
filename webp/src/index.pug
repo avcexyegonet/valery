@@ -1,0 +1,17 @@
+include pug/libs/_libs
+
+doctype html
+html(lang='ru')
+  
+    include pug/_head
+
+    body
+        main
+            include pug/components/_banner
+            .content
+                include pug/components/_services
+                include pug/components/_about
+                include pug/components/_contacts
+                include pug/components/_footer
+
+        script(src='https://api-maps.yandex.ru/2.1/?apikey=f3a8eab2-98e0-4a46-8c57-4bcf502f1549&lang=ru_RU' type='text/javascript')

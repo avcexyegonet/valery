@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.footer {
+    padding-block: 20px;
+    border: 1px dashed var(--color-dark-main);
+
+    .wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 0.75rem;
+    }
+
+    &__logo {
+        @include logo(30px);
+        cursor: pointer;
+    }
+}
