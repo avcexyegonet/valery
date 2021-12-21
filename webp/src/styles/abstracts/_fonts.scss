@@ -1,16 +1,15 @@
 @font-face {
-	font-family: 'GolosTextWebRegular';
-	src:
-		url('../fonts/Golos-Text/Golos-Text_Regular.woff2') format('woff2'),
-		url('../fonts/Golos-Text/Golos-Text_Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Poppins-Reg';
+    src: url('../fonts/Poppins/Poppins-Regular.woff2') format('woff2'),
+         url('../fonts/Poppins/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: 'LackLineregular';
-    src: url('../fonts/Lack-Line/Lack-Line.woff2') format('woff2'),
-         url('../fonts/Lack-Line/Lack-Line.woff') format('woff');
+    font-family: 'Naftalene';
+    src: url('../fonts/Naftalene/naftalene.woff2') format('woff2'),
+         url('../fonts/Naftalene/naftalene.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

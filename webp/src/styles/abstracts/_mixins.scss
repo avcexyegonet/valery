@@ -1,15 +1,13 @@
-@use 'vars';
-
 @mixin mq($from) {
     @media (min-width: $from) {
         @content;
     }
 }
 
-@mixin logo($size) {
-    width: $size;
-    height: $size;
-    background: url('../images/logo.png')no-repeat center / contain;
+@mixin templateBlock() {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-inline: 80px;
 }
 
 @mixin hideScrollbar() {

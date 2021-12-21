@@ -25,11 +25,15 @@ a:active {
     width: 5px;
 }
 *::-webkit-scrollbar-track {
-    background: var(--color-bg);
+    //background: var(--color-bg);
 }
 *::-webkit-scrollbar-thumb {
-    background-color: var(--color-bg);
+    //background-color: var(--color-bg);
     border-radius: 15px;
+}
+
+:root {
+    font-size: 16px;
 }
 
 body {
@@ -37,15 +41,19 @@ body {
     margin: 0;
     box-sizing: inherit;
     height: auto;
-    font-size: 23px;
+    font-size: 1rem;
     min-width: 320px;
-    font-family: "GolosTextWebRegular";
-    color: var(--color-text);
-    background: var(--color-bg);
+    font-family: "Poppins-Reg";
+    color: $color-white;
+    background: $color-dark;
 
     ul {
         margin: 0;
         padding: 0;
+        list-style: none;
+    }
+
+    li {
         list-style: none;
     }
     a {
@@ -61,6 +69,10 @@ body {
     @media screen and (max-width: 1200px) {
         font-size: 17px;
     }
+}
+
+main {
+    @include templateBlock();
 }
 
 h1,
@@ -81,6 +93,6 @@ img {
 }
 
 *::selection {
-    background-color: var(--color-green);
-    color: var(--color-white);
+    background-color: $color-main;
+    color: $color-white;
 }
